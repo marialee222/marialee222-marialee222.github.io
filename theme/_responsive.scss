@@ -1,0 +1,182 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.section, .blog-list-wrapper, .resume-wrapper {
+		max-width: 815px;
+	}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	.section, .blog-list-wrapper, .resume-wrapper {
+		max-width: 940px;
+	}
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+	.section, .blog-list-wrapper, .resume-wrapper {
+		max-width: 980px;
+	}
+}
+
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.skill-blocks .item {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.skill-blocks .item-icon-holder {
+		width: 50px;
+		height: 50px;
+	}
+	.skill-blocks .item-icon-holder .item-icon {
+		font-size: 1.5rem;
+	}
+	
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+	
+	body {
+		padding-bottom: 70px;
+	}
+	
+	.side-panel .offcanvas {
+		position: fixed;
+		bottom: 0;
+		top: auto;
+		left: 0;
+		right: 0;
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+		@include transition(none);
+		
+		.main-nav {
+			background: rgba(darken($theme-bg-primary, 10%), 0.9);
+			@include border-radius(0);
+			padding: 0;
+		}
+		.navbar {
+			padding: 0;
+		}
+		.navbar-nav {
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-evenly;
+			
+		}
+		.nav-item {
+			padding: 0.3rem;
+		}
+		.nav-text {
+			font-size: 0.65rem;
+		}
+		.nav-item-close {
+			display: none;
+		}
+	}
+	.side-panel .offcanvas-body {
+		padding-left: 0;
+	}
+	.section {
+		padding: 3rem 1.5rem;
+	}
+
+	.section.has-profile-image, .resume-wrapper {
+		margin-top: 60px;
+		padding-top: calc(75px + 1rem);
+	}
+	.tech-list .icon-item {
+		max-width: 100%;
+	}
+	.resume-body .col-main {
+		border: none;
+	}
+	
+	.slider-container .quote-content {
+		padding-top: 1rem;
+		font-size: 1rem;
+	
+	}
+	
+	.slider-container .slider-custom-controls div.prev {
+		left: -2rem;
+	}
+	
+	.slider-container .slider-custom-controls div.next {
+		right: -2rem;
+	}
+	
+	.blog-breadcrumb {
+		position: static;
+		padding: 0;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	
+	.blog-entry .post-title {
+		font-size: 1.5rem;
+	}
+	
+	.blog-comment-area .comment-container .comment-item .comment-item-box {
+		background: none;
+		
+	}
+	
+	.blog-comment-area .comment-container .comment-item .comment-author img {
+		width: 30px;
+		height: 30px;
+	}
+	
+	.key-results .item .key-data {
+		font-size: 1.5rem;
+	}
+	.key-results .item .data-desc {
+		font-size: 0.875rem;
+	}
+	
+	.result-item .result-data {
+		font-size: 0.875rem;
+		width: 50px;
+		height: 50px;
+	}
+
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+	
+	
+	
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+	.section, .blog-list-wrapper {
+		//max-width: 920px;
+	}
+}
+
+
+

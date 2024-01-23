@@ -1,0 +1,432 @@
+/* ============= Base ============= */
+
+/*********** Theme Generic **********/
+body { 
+    color: $theme-text-color-secondary;
+    background: $theme-bg-primary;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $theme-text-color-primary;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+a {
+	color: $theme-color-secondary;
+	text-decoration: none;
+	
+	&:hover {
+		color: lighten($theme-color-secondary, 2%);
+		text-decoration: underline;
+	}
+
+}
+
+
+.text-highlight {
+	color: $theme-color-secondary !important;
+	font-weight: 600;
+}
+
+
+small {
+	font-size: 0.75rem;
+}
+
+
+.btn, a.btn {
+	font-weight: bold;
+	padding: 0.675rem 1.5rem;
+	font-size: 1rem;
+	outline: none;
+	@include border-radius(2rem);
+	text-decoration: none;
+	svg {
+		stroke-width: 2px;
+		margin-left: 0.25rem;
+	}
+}
+
+.btn:focus, .btn.focus, .btn:active {
+	box-shadow: none !important;
+	@include transition(all 0.4s ease-in-out);
+	outline: none;
+}
+
+.btn-primary {
+	color: #fff;
+	background: $theme-color-primary;
+	&:hover, &:active {
+		color: white;
+		background: darken($theme-color-primary, 5%);
+		border-color: darken($theme-color-primary, 5%);
+	}
+	svg {
+		stroke-width: 2px;
+	}
+}
+
+
+
+.btn-secondary {
+	color: white; 
+	background: darken($theme-bg-light, 5%);
+	border-color: darken($theme-bg-light, 5%);
+	&:hover, &:active {
+		color: white;
+		background: $theme-bg-light;
+		border-color: $theme-bg-light;
+	}
+}
+
+
+
+.theme-btn-ghost {
+	color: #fff;
+	background: none;
+	border-color: #fff;
+}
+
+
+
+.form-control {
+	padding-top: 0.875rem;
+	padding-bottom: 0.875rem;
+	border-color: lighten($theme-bg-secondary, 5%);
+	background-color: lighten($theme-bg-secondary, 5%);
+	@include placeholder ($theme-text-color-secondary);
+	color: white;
+	
+	&:focus {
+		box-shadow: none;
+		border: 1px solid lighten($theme-bg-secondary, 5%);
+		background-color: lighten($theme-bg-secondary, 10%);
+		
+		color: white;
+	}
+	
+	
+}
+
+
+.form-text {
+	font-size: 0.8rem;
+}
+
+textarea.form-control {
+	height: inherit;
+}
+
+.error {
+	color: $theme-error;
+}
+
+.form-group {
+	label.error {
+		font-size: 0.875rem;
+		padding: 0.5rem 0;
+	}
+	.btn {
+		line-height: 1;
+	}
+
+}
+.form-select  {
+	border-color: $theme-border-color;
+	height: 2.5rem;
+	color: $theme-text-color-light;
+}
+
+a.more-link {
+	text-decoration: none;
+	color: $theme-color-secondary;
+	font-weight: 600;
+	font-size: 0.875rem;
+	
+	&:hover {
+		text-decoration: underline;
+		color: darken($theme-color-secondary, 5%);
+		.link-arrow {
+			margin-left: 0.5rem;
+		}
+	}
+	.link-arrow {
+		@include transition (all .2s ease-in-out);
+	    display: inline-block;
+	    .bi {
+		    position: relative;
+		    top: 1px;
+	    }
+	}
+}
+
+.limit-max-width {
+	max-width: 700px;
+}
+
+
+/* Layout */
+.top-bar {
+	min-height: 60px;
+	padding-top: 1rem;
+	.top-bar-cta {
+		position: absolute;
+		right: 0;
+		padding: 0.5rem 1.25rem;
+		font-size: 0.875rem;
+		
+	}
+}
+
+.menu-toggler {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 1rem;
+	color: $theme-text-color-primary;
+	@include border-radius(6px);
+	text-align: center;
+	z-index: 1050; //higher than offcanvas (z-index: 1045)
+	&:hover {
+		color: white;
+	}
+}
+
+.social-list {
+
+	a {
+		width: 38px;
+		height: 38px;
+		padding-top: 6px;
+		font-size: 17px;
+		display: inline-block;
+		text-align: center;
+		@include border-radius(50%);		
+		background: rgba(0, 0, 0, 0.1);
+		color: $theme-text-color-secondary;
+		
+		&:hover, &:focus {
+			color: $theme-color-secondary;
+			background: rgba(0, 0, 0, 0.2);
+			@include transition(all 0.4s ease-in-out);
+		}
+		
+	}
+}
+
+
+
+
+.side-panel {
+	
+	.navbar {
+		padding: 0;
+	}
+	
+	.offcanvas {
+		width: auto;
+		border:none;
+		background: none;
+		color: $theme-text-color-secondary;
+		top: 0;
+		
+	}
+	.offcanvas-body {		
+		padding: 0;
+		padding-left: 1rem;
+	}
+	.main-nav {
+		background: rgba(0, 0, 0, 0.1);
+		padding: 1rem 0.5rem;
+		@include border-radius(6px);
+	}
+	a {
+		color: $theme-text-color-secondary;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.icon-holder {
+		font-size: 1.125rem;
+		min-height: 25px;
+	}
+
+	.nav-text {
+        text-transform: uppercase;
+        font-size: 0.675rem;
+	}
+	.navbar-nav .nav-link {
+		&.active {
+		   color: $theme-color-primary;
+		   &:hover {
+			  color: $theme-color-primary; 
+		   }
+		}
+		&:hover {
+			color: white;
+		}
+	}
+	.nav-item-close .btn-close {
+		color: $theme-text-color-primary;
+		background-image: none;
+		font-weight: 900;
+		font-size: 2rem;
+		outline: none;
+		&:hover, &:focus {
+			color: white;
+			box-shadow: none;
+			@include opacity(1);
+		}
+		
+	}
+}
+
+
+.section {
+	background: $theme-bg-secondary;
+	padding: 3rem;
+	@include border-radius(0.5rem);
+	color: $theme-text-color-secondary;
+	margin-bottom: 2.5rem;
+	&.has-profile-image {
+		margin-top: 90px;
+		position: relative;
+	    padding-top: calc(75px + 1rem);
+	    .profile-pic {
+			max-width: 160px;
+			height: auto;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			top: -80px;
+			border: 8px solid $theme-bg-secondary;
+		}
+	}
+}
+.section-heading {
+	font-size: 1.75rem;
+	text-align: center;
+	color: white;
+	font-weight: 900;
+	letter-spacing: .1rem;
+}
+
+.section-subheading {
+	font-size: 1.125rem;
+	color: white;
+	
+}
+
+.section-intro {
+	margin: 0 auto;
+}
+
+
+.page-intro-section {
+	
+	.intro-name {
+		font-size: 1.75rem;
+		font-weight: 900;
+		letter-spacing: 0.1rem;
+	}
+
+	.intro-content {
+		margin-top: 1rem;
+	}
+
+	.profile-intro {
+		position: relative;
+	}
+	
+
+}
+
+
+
+.footer {
+	.copyright {
+		a {
+			color: $theme-text-color-secondary;
+		}
+	}
+}
+
+
+/* Dark/Light Mode Toggle */
+.mode-toggle {
+     position: absolute;
+     left: 50px;
+     top: 1.2rem;
+	.toggle {
+	    display: none;
+	    
+		+ .toggle-btn {
+			outline: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 47px;
+			height: 26px;
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			@include transition(all 0.3s ease-in-out);
+			border: 2px solid $theme-text-color-secondary;
+			@include border-radius(54px);
+			
+			.toggle-icon {
+				color: $theme-text-color-secondary;
+				font-size: 10.25px;
+				display: flex;
+			}
+			
+	        &::selection {
+				background: none;
+			}
+			&:after,
+			&:before {
+				position: absolute;
+				display: block;
+				content: "";
+				width: 50%;
+				height: 100%;
+			}
+	    
+			&:after {
+				left: 4px;
+				top: 2.5px;
+				@include transition(all 0.2s ease-in-out);
+				content: "";
+				@include border-radius(50%);
+				width: 16px;
+				height: 16px;
+				background: $theme-text-color-primary;
+			}
+	    
+			&:before {
+				display: none;
+			}
+		}
+		
+		&:checked + .toggle-btn {
+			border: 2px solid $theme-lightmode-text-color-secondary;
+			background: none;
+			&:after {
+	
+				left: 50%;
+	            background: $theme-lightmode-text-color-secondary;
+			}
+			
+			.toggle-icon {
+				color: $theme-lightmode-text-color-secondary;
+			}
+		}
+
+	}
+	
+}
+

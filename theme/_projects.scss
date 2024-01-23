@@ -1,0 +1,99 @@
+/* ============= Projects Page  ============= */
+
+.projects-section {
+	.project-item {
+		.title {
+			font-size: 1.125rem;
+			a {
+				color: white;
+				text-decoration: none;
+				&:hover {
+					color: $theme-color-secondary;
+					text-decoration: underline;
+				}
+			}
+			
+		}
+		.subtitle {
+			font-size: 0.875rem;
+		}
+		
+	}
+	.project-thumb {
+		max-width: 320px;
+		width: 100%;
+	}
+	
+	
+}
+
+.tech-stack {
+	img {
+		width: auto;
+		height: 25px;
+	}
+	.list-label {
+		color: $theme-text-color-secondary;
+	}
+}
+
+.contact-cta {
+	.intro {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+
+.case-study-heading {
+	font-size: 1.65rem;
+	color: white;
+}
+
+.case-study-section-content {
+	h4 {
+		font-size: 1.125rem;
+	}
+}
+
+.key-results {
+	.item {
+		
+		.item-icon {
+			font-size: 2rem;
+		}
+		
+		.key-data {
+			font-weight: bold;
+			font-size: 2rem;
+			color: white;
+		}
+		.key-data-desc {
+			color: $theme-text-color-light;
+			font-size: 0.75rem;
+		}
+	}
+}
+
+.result-item {
+	.result-data {
+		width: 100px;
+		height: 100px;
+		border: 2px solid white;
+		@include border-radius(50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 1.5rem;
+		color: white;
+		font-weight: 700;
+
+	}
+}
+
+.leadgen-section {
+	.section-heading {
+		font-size: 1.5rem;
+	}
+}
