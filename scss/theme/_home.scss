@@ -1,0 +1,188 @@
+/* ============= Home Page  (index) ============= */
+.featured-project-list {
+	
+	.card {
+        background: none;
+		border: none;
+	}
+
+
+	.card-title {
+		font-size: 1.125rem;
+		a {
+			color: $theme-text-color-primary;
+			text-decoration: none;
+			&:hover {
+				color: $theme-color-secondary;
+			}
+		}
+	}
+	.card-text, .card-link {
+		font-size: 1rem;
+		
+	}
+}
+
+
+
+
+
+.slider-container {
+	position: relative;
+	
+	.quote-holder {
+		position: relative;
+		padding-top: 1rem;
+	}
+	
+	.quote-content {
+		font-size: 1.125rem;
+		line-height: 1.8;
+		font-style: italic;
+	}
+	
+	.quote-icon {
+		position: absolute;
+		font-size: 1.5rem;
+		color: rgba(256, 256, 256, 0.1);
+		
+		&.fa-quote-left {
+			left: 0;
+			top: 0;
+		}
+		&.fa-quote-right {
+			right: 0;
+			top: 0;
+		}
+	}
+	
+	.quote-highlight {
+		color: $theme-color-secondary;
+		font-weight: bold;
+	}
+
+	
+	.source-holder {
+		font-size: 0.875rem;
+		color: $theme-text-color-secondary;
+		
+	}
+
+	
+	.tns-nav {
+		display: block;
+		margin-top: 1rem;
+		
+		button {
+		    width: 8px;
+		    height: 8px;
+		    padding: 0;
+		    margin: 0 5px;
+		    border-radius: 50%;
+		    background: $theme-text-color-light;
+		    border: 0;
+		    &.tns-nav-active {
+			    background: rgba(256, 256, 256, 0.8);
+		    }
+		}
+	}
+	
+	
+	.slider-custom-controls div{
+
+		font-size: 1.25rem;
+		display: inline-block;
+		color: rgba(256, 256, 256, 0.5);
+		@include border-radius(50%);
+		width: 54px;
+		height: 54px;
+	    position: absolute;
+	    top: 50%;
+	    margin: 0;
+	    margin-top: -46px;
+	    outline: none;
+	    cursor: pointer;
+	    text-align: center;
+	    background: rgba(0, 0, 0, 0.05);
+	
+	    &:hover {
+		   color: $theme-color-secondary;
+		   background: rgba(0, 0, 0, 0.2);
+	    }
+	    
+		&.prev {
+			left: -1rem;
+			padding-top: 0.75rem;
+		}
+		&.next {
+			right: -1rem;
+			padding-top: 0.75rem;
+		}
+	}
+
+}
+
+
+.client-logo-list {
+	
+	.logo-holder {
+		display: flex;
+		height: 100%;
+		max-height: 80px;
+		padding: 1rem;
+		background: rgba(0, 0, 0, 0.1);
+		@include border-radius(6px);
+		justify-content: center;
+		
+		img {
+			max-width: 80px;
+			width: 100%;
+			height: auto;
+			@include opacity(0.6);
+		}
+	}
+}
+
+
+
+
+.tech-list {
+	.icon-item {
+		width: 80px;
+		
+		img {
+			max-width: 100%;
+			height: auto;
+			//vertical-align: middle;
+		}
+	}
+}
+
+.skill-blocks {
+    .item {
+	    padding: 1rem;
+	    margin-bottom: 1.5rem;
+    }
+	.item-icon-holder {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		@include border-radius(50%);
+		border: 2px solid $theme-text-color-light;
+		color: $theme-text-color-primary;
+		margin-bottom: 1.125rem;
+		
+
+		.item-icon {
+			font-size: 2rem;
+		}
+	}
+	.item-title {
+		font-size: 1.125rem;
+	}
+}
+
+
+

@@ -1,0 +1,314 @@
+/* ============= Blog Page  ============= */
+
+.blog-breadcrumb {
+	position: absolute;
+	left: 2rem;
+	top: 1.5rem;
+	font-size: 0.875rem;
+	a {
+		color: darken($theme-text-color-secondary, 5%);
+		&:hover {
+			color: $theme-color-secondary;
+		}
+	}
+	color: darken($theme-text-color-secondary, 5%);
+	
+}
+.post-item {
+	
+	
+	.post-item-inner {
+		background: $theme-bg-secondary;
+		@include border-radius(0.5rem);
+		position: relative;
+		min-height: 100%;
+		
+		&:hover {
+			background: lighten($theme-bg-secondary, 3%);
+			@include transition (all .2s ease-in-out);
+			.title-icon-holder  {
+				visibility: visible;
+				color: $theme-color-secondary;
+
+			}
+		}
+		
+	}
+	
+		
+	.post-item-body {
+		padding: 2rem;
+	}
+	.post-item-footer {
+		padding: 1rem 2rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		font-size: 0.875rem;
+		
+	}
+	.post-title {
+		font-size: 1.25rem;
+		line-height: 1.5;
+		font-weight: 600;
+	}
+	
+	.title-icon-holder {
+		font-size: 1.75rem;
+		font-weight: 900;
+	    color: white;
+	    visibility: hidden;
+	   
+	}
+	
+	.link-mask {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.post-tags {
+	.tag-badge {
+		background: darken($theme-bg-light, 5%);
+	}
+}
+
+.featured-post-item {
+    background: $theme-bg-secondary;
+    position: relative;
+    &:hover {
+		background: lighten($theme-bg-secondary, 3%);
+		@include transition (all .2s ease-in-out);
+		.title-icon-holder  {
+			visibility: visible;
+			color: $theme-color-secondary;
+		}
+	}
+	.post-item-body {
+		padding: 0;
+	}
+	.post-item-image {
+		background-image: url("../images/blog/blog-post-thumb.jpg");
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+		background-size: cover;
+		min-height: 260px;
+	}
+	.content-holder-inner {
+		padding: 2rem;
+		
+		
+	}
+
+}
+
+.blog-entry {
+	.post-title {
+		font-size: 2rem;
+	}
+	.post-author {
+		font-size: 1rem;		
+	}
+	.post-meta {
+		font-size: 0.875rem;
+		text-align: center;
+		li {
+			margin-bottom: 0.5rem;
+			border-right: 1px solid rgba(256, 256, 256, 0.1);
+			margin-right: 0;
+			padding: 0 1rem;
+
+			&:last-child {
+				border-right: none;
+				
+			}
+		}
+	}
+	.post-content {
+		line-height: 1.8;
+		font-size: 1.125rem;
+		//color: $theme-text-color-primary;
+		p {
+			margin-bottom: 2rem;
+		}
+		.text-highlight {
+			color: white !important;
+		}
+		
+	}
+	.post-content-heading {
+		padding: 1.5rem 0;
+	}
+	.post-content-link {
+		color: $theme-color-secondary;
+	}
+	.post-list {
+		
+		li {
+			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.post-nav {
+
+        a {
+	        text-decoration: none;
+
+        }
+    }
+}
+
+.blog-quote-holder {
+	background: lighten($theme-bg-secondary, 5%);
+	position: relative;
+	.blockquote {
+		font-weight: 600;
+		color: white;
+		.quote-icon {
+			position: absolute;
+			left: 1.5rem;
+			top: 1.5rem;
+			color: rgba(256, 256, 256, 0.3);
+		}
+	}
+	.blockquote-footer {
+		color: $theme-text-color-secondary;
+		margin-bottom: 0;
+		cite {
+			color: $theme-text-color-secondary;
+		}
+	}
+}
+
+.comment-reply-holder {
+	background: $theme-bg-secondary;
+	.reply-title {
+		font-size: 1.25rem;
+	}
+	.form-control {
+		border-color: lighten($theme-bg-secondary, 5%);
+	}
+}
+
+.blog-comment-area {
+
+    .title {
+        font-size: 22px;
+        font-family: "Open Sans", arial, sans-serif;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .comment-container {
+        margin-bottom: 60px;
+        .comment-item {                
+            margin-bottom: 30px;
+            .comment-item-box {
+                background: lighten($theme-bg-secondary, 5%);
+                margin-bottom: 1rem;
+                
+            }
+            .comment-author {
+                
+                img {
+                    width: 50px;
+                    height: 50px; 
+                    @include border-radius(50%);       
+                }
+            }
+            .comment-body {
+                .name {
+                    color: $theme-color-secondary;
+                    font-style: normal;
+                    font-size: 0.875rem;
+                }
+                .time {
+                    font-size: 0.75rem;
+                    margin-bottom: 15px;
+                    color: $theme-text-color-light;
+                }
+                .comment-reply-link {
+                    padding: 0.5rem 1rem;
+                    font-size: 0.875rem;
+                    border: lighten($theme-bg-secondary, 10%);
+                    background: lighten($theme-bg-secondary, 10%);
+                    &:hover {
+                        color: $theme-bg-primary;
+                        background: white;
+                    }
+                }
+                .content {
+                    p {
+	                    margin-bottom: 15px;
+                    }
+                }
+            }
+            .children {
+                padding-left: 1rem;
+            }
+        }
+    }
+    .comment-form {
+        .error {
+            color: $theme-error;
+            font-family: arial, sans-serif;
+            display: block;
+            font-size: 14px;
+            text-align: left;
+            padding-top: 5px;            
+            ;
+        }
+    }
+    
+    
+}
+
+.comment-form-holder {
+	.title {
+		font-size: 1.5rem;
+	}
+}
+
+.theme-pagination-nav {
+	
+	.pagination {
+
+	    .page-item {
+	       .page-link {
+	            @include border-radius(4px);
+	            border: none;
+	            margin-right: 0.5rem;
+	            background: none;
+	            font-weight: 600;
+	            font-size: 1rem;
+	            color: $theme-text-color-secondary;
+	            font-size: 0.875rem;
+	            box-shadow:none;
+	            &.active {
+		            background: darken($theme-bg-light, 5%);
+		            color: white;
+		            &:hover {
+			            color: white;
+	                    background: darken($theme-bg-light, 5%);
+		            }
+	            }
+	            &:hover {
+	                color: white;
+	                background: $theme-bg-light;
+	                text-decoration: none;
+	            }
+	        }
+	        &.disabled {
+			    .page-link {
+				    color: $theme-text-color-light;
+				    //color: red;
+			    }
+		    }
+	    }
+	}
+
+}
+

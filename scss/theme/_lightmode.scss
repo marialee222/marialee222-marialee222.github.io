@@ -1,0 +1,316 @@
+/* ============= Light More  ============= */
+
+.light-mode {
+	background: $theme-lightmode-bg;
+	color: $theme-lightmode-text-color-secondary;
+	
+	hr {
+		border-color: darken($theme-lightmode-bg, 15%);
+		@include opacity(1);
+	}
+	
+	.form-control {
+		background: none;
+		border-color: darken($theme-lightmode-bg, 15%);
+		color: $theme-lightmode-text-color-secondary;
+	}
+	
+	
+	.menu-toggler {
+		color: $theme-lightmode-text-color-secondary;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+	    color: $theme-lightmode-text-color-primary;
+	}
+	
+	.footer .copyright a {
+		color: $theme-lightmode-text-color-secondary;
+	}
+
+	.social-list a {
+		background: white;
+		color: $theme-bg-light;
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+		&:hover {
+			color: $theme-color-secondary;
+		}
+		
+	}
+	
+	.side-panel .main-nav {
+		background: white;
+		box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.05);
+	}
+	.side-panel .navbar-nav .nav-link {
+		color: $theme-lightmode-text-color-secondary;
+		
+		
+		&:hover {
+			color: $theme-lightmode-text-color-primary;
+		}
+		
+		&.active {
+			color: $theme-color-primary;
+			&:hover {
+				color: $theme-color-primary;
+			}
+		}
+
+	}
+	
+	.side-panel .nav-item-close .btn-close {
+		color: $theme-lightmode-text-color-secondary;
+	}
+	
+
+	.section {
+		background: white;
+		color: $theme-lightmode-text-color-secondary;
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+	}
+
+	.section.has-profile-image .profile-pic {
+		border-color: white;
+		
+	}
+
+	.featured-project-list .card-title a {
+		color: darken($theme-lightmode-text-color-primary, 10%);
+	}
+	.client-logo-list .logo-holder {
+		background: darken($theme-lightmode-bg, 30%);
+		.logo-image {
+			@include opacity(1);
+		}
+	}
+	
+	.slider-container .quote-icon {
+		color: darken($theme-lightmode-bg, 20%);
+	}
+	
+	.slider-container .source-holder {
+		color: $theme-lightmode-text-color-light;
+	}
+	
+	.slider-container .slider-custom-controls div {
+		background: $theme-lightmode-bg;
+		box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0, 0.08);
+		color: $theme-lightmode-text-color-light;
+		&:hover {
+			color: $theme-lightmode-text-color-primary;
+			background: darken($theme-lightmode-bg, 2%);
+		}
+		
+	}
+	.slider-container .tns-nav button.tns-nav-active {
+		background-color: $theme-lightmode-text-color-light;
+	}
+	
+	.slider-container .tns-nav button {
+		background-color: darken($theme-lightmode-bg, 10%);
+	}
+	
+	.projects-section .project-item .title a {
+		color: $theme-lightmode-text-color-primary;
+		&:hover {
+			color: $theme-color-secondary;
+			
+		}
+	}
+	
+	.skill-blocks .item-icon-holder {
+		color: $theme-bg-light;
+		border-color: darken($theme-lightmode-bg, 10%);
+		background-color: $theme-lightmode-bg;
+	}
+	
+	.skill-blocks .item-title {
+		color: $theme-lightmode-text-color-secondary;
+	}
+	
+	.leadgen-section .section-heading {
+		color: $theme-lightmode-text-color-primary;
+	}
+	
+	.featured-post-item {
+		background: white;
+		box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0, 0.08);
+		&:hover {
+			box-shadow: 0 0.125rem 0.3rem rgb(0, 0, 0, 0.1);
+		}
+	}
+	.post-item .post-item-inner {
+		background: white;
+		box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0, 0.08);
+		&:hover {
+			box-shadow: 0 0.125rem 0.3rem rgb(0, 0, 0, 0.1);
+		}
+	}
+	.post-item .post-item-footer {
+		color: $theme-lightmode-text-color-light;
+		border-color: $theme-lightmode-bg;
+	}
+	
+	.blog-breadcrumb {
+
+		a {
+			color: $theme-lightmode-text-color-secondary;
+		}
+		color: $theme-lightmode-text-color-secondary;
+		
+	}
+	
+	.blog-entry .post-meta li {
+		border-color: darken($theme-lightmode-bg, 5%);
+		color: $theme-lightmode-text-color-light;
+	}
+	
+	.blog-quote-holder {
+		background: $theme-lightmode-bg;
+	}
+	.blog-quote-holder .blockquote {
+		color: $theme-lightmode-text-color-primary;
+	}
+	.blog-quote-holder .blockquote .quote-icon {
+		color: $theme-lightmode-text-color-light;
+	}
+	
+	.blog-quote-holder .blockquote-footer {
+		color: $theme-bg-light;
+		cite {
+			color: $theme-bg-light;
+		}
+	}
+	
+	.blog-entry .post-content .text-highlight {
+		color: darken($theme-color-secondary, 10%) !important;
+	}
+	
+	.blog-comment-area .comment-container .comment-item .comment-item-box {
+		background: $theme-lightmode-bg;
+	}
+	
+	.blog-comment-area .comment-container .comment-item .comment-body .name {
+		color: $theme-lightmode-text-color-secondary;
+	}
+	.blog-comment-area .comment-container .comment-item .comment-body .time  {
+		color: darken($theme-lightmode-bg, 40%);
+	}
+	
+	.blog-comment-area .comment-container .comment-item .comment-body .comment-reply-link {
+		border-color: lighten($theme-bg-light, 5%);
+		background-color: lighten($theme-bg-light, 5%);
+		&:hover {
+			color: white;
+			border-color: $theme-bg-light;
+			background-color: $theme-bg-light;
+		}
+	}
+	
+	.comment-reply-holder {
+		background: white;
+	}
+	
+	.comment-reply-holder .reply-title {
+		color: $theme-lightmode-text-color-secondary;
+	}
+
+	.key-results .item .key-data {
+		color: $theme-lightmode-text-color-primary;
+	}
+	.result-item .result-data {
+		color: $theme-lightmode-text-color-primary;
+		border-color: $theme-lightmode-text-color-primary;
+	}
+	
+	
+	.resume-wrapper {
+		background: white;
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+    }
+    .resume-profile-pic {
+	    border-color: white;
+    }
+    .resume-contact {
+	    border-color: darken($theme-lightmode-bg, 15%);
+    }
+    .resume-role-title {
+	    color: $theme-lightmode-text-color-secondary;
+    }
+    .resume-company-name {
+	    background: darken($theme-lightmode-bg, 5%);
+    }
+    .resume-section-heading-icon {
+	    background: darken($theme-text-color-secondary, 10%);
+	    color: white;
+	    font-weight: bold;
+    }
+    .resume-progress {
+	    background: darken($theme-lightmode-bg, 5%);
+    }
+    .resume-skill-name {
+	    color: $theme-lightmode-text-color-primary;
+    }
+    .resume-skill-badge {
+	    background: $theme-bg-light;
+	    color: white;
+    }
+    
+    .resume-level-indicator .item {
+	    background: darken($theme-lightmode-bg, 5%);
+	    &.item-full {
+		    background: darken($theme-text-color-secondary, 10%);
+	    }
+    }
+    
+    .resume-projects-section .item-heading a {
+	    color: $theme-lightmode-text-color-secondary; 
+    }
+    
+    .resume-degree {
+	    color: $theme-lightmode-text-color-primary;
+    }
+    
+    .resume-lang-name {
+	    color: $theme-lightmode-text-color-primary;
+    }
+    
+    .resume-timeline-item:before {
+	    border-color:  darken($theme-lightmode-bg, 20%);
+	    background-color: darken($theme-lightmode-bg, 5%);
+    }
+    .resume-timeline:before {
+	    background: darken($theme-lightmode-bg, 20%);
+	    top: 12px;
+    }
+    
+    
+
+
+
+
+}
+
+@media (max-width: 991.98px) {
+	
+	.light-mode  {
+		
+		.side-panel .offcanvas  {
+		    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.07);
+		}
+		
+		.blog-comment-area .comment-container .comment-item .comment-item-box {
+			background: none;
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}
