@@ -123,32 +123,37 @@
 								<h3 class="case-study-heading mb-3">Description</h3>
 							</div><!--//col-auto-->
 							<div class="col-12 col-lg-9  case-study-section-content">
-								<p>The ATM app allows users to simulate depositing or withdrawing cash. It offers a form where users can select either a deposit or cashback operation, input the desired amount, and submit the transaction. The application's state is managed through React's useState hook, ensuring dynamic updates to the total account balance and transaction validation. Styling is handled using CSS, providing a clean and user-friendly interface.
+								<p>The ATM app allows users to simulate depositing or withdrawing cash. It offers a form where users can select either a deposit or cashback operation, input the desired amount, and submit the transaction. The application's state is managed through React's useState hook, ensuring dynamic updates to the total account balance and transaction validation. Styling is handled using CSS, providing a clean and user-friendly interface.</p>
 								
-																	<li class="mb-3">The app automatically detects and displays the winner or a draw.</li>
+				
 								<h4 class="py-3">Functionality</h4>
-										<p>Updates made to enhance user experience and functionality:</p>
+								<p>Updates made to enhance user experience and functionality:</p>
 								<ul class="py-3">
-									<li class="mb-3">Users can start a new game of Tic-tac-toe.</li>
-									<li class="mb-3">Players can take turns placing their symbols (X or O) on the board.</li>
-									<li class="mb-3">Users can restart the game at any time.</li>
-                  
+									<li class="mb-3">Users interact with the application through a form.</li>
+									<li class="mb-3">They select an action (Deposit or Cash Back) from a dropdown menu.</li>
+									<li class="mb-3">Based on the selected action, the corresponding mode is set (isDeposit).</li>
+									<li class="mb-3">Users input an amount and submit the form.</li>
+									<li class="mb-3">The application validates the transaction and updates the account balance accordingly.</li>
+									<li class="mb-3">Errors are displayed if there are any issues with the transaction.</li>
 								</ul>
+
+
+								
 								
 								<h4 class="py-3">How to Run</h4>
-								<p>To run the Tic-tac-toe App on your machine, follow these steps: </p>
+								<p>To run the ATM App on your machine, follow these steps: </p>
 								<ol class="py-3">
-									<li>First, clone the tic-tac-toe repository to your local machine using the following command<br>
-git clone https://github.com/marialee222/tictactoe.git</li>
-									<li>Navigate to the directory where you cloned the Tictactoe repository in your terminal.<br>
-cd tictactoe</li>
+									<li>First, clone the ATM repository to your local machine using the following command<br>
+git clone https://github.com/marialee222/atm.git</li>
+									<li>Navigate to the directory where you cloned the ATM repository in your terminal.<br>
+cd atm</li>
 									<li>Install the necessary dependencies by running:<br>
-npm install</li>
-									<li>Start the development server by running:<br>
-npm start</li>
-									<li>Once the development server starts, open your web browser and navigate to:<br>
-http://localhost:3000</li>
-									<li>Play Tic-tac-toe!</li>
+npm install react react-dom</li>
+									<li>Run the application:<br>
+npx babel --watch atm.jsx --out-file atm.js</li>
+									<li>Open index.html in preferred browser.</li>
+
+									<li>Check out the ATM app!</li>
 								</ol>                
 							
 							</div><!--//col-->
